@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zheng-Chen's Portfolio</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100,200,300,400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="all-content">
+
+  <!-- Nevigate bar and Theme toggle -->
+    <div class="top-region">
+      <nav class="controls">
+        <div class="control control1 active-btn" data-id="homepage">Home</div>
+        <div class="control control2" data-id="aboutme">About</div>
+        <div class="control control3" data-id="projects">Projects</div>
+        <div class="control control4" data-id="contact">Contact</div>
+      </nav>
+      <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+      </div>
+    </div>
+
+    <!-- Contact infomaiton and main content display area -->
+    <div class="main-content">
+
+      <!-- NameCard -->
+      <div class="contact-info">
+        <img src="./img/img_bull.JPG" class="photo">
+        <div class="icon">
+          <i class="fas fa-map-marker-alt"></i>
+          <h4>Location</h4>
+          <p>Houston, Texas, United States</p>
+        </div>
+        
+        <div class="icon">
+          <i class="fas fa-envelope"></i>
+          <h4>Email</h4>
+          <p>s87610281@gmail.com</p>
+        </div>
+        
+        <div class="icon">
+          <i class="fas fa-earth"></i>
+          <h4>Languages</h4>
+          <p>Mandarin, English</p>
+        </div>
+        
+        <div class="contact-icon">
+          <a href="https://twitter.com/ZhengchenY" target="_blank">
+              <i class="fab fa-twitter"></i>
+          </a>
+          <a href="http://www.github.com/YZCUS" target="_blank">
+              <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/zheng-chen-yao/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Display Area -->
+      <section class="display-area">
+
+        <!-- Homepage -->
+        <div class="section section1 active" id="homepage">
+          <h1>Hello! This is <span>Zheng-Chen</span>.</h1>
+          <h1>I'm <span class="auto-typing"></span>.</h1>
+        </div>
+
+        <!-- AboutMe -->
+        <div class="section section2" id="aboutme">
+          <div class="title">
+            <h1>About <span>Me</span></h1>
+          </div>
+          <div class="intro">
+            <div class="intro-words">
+              <p>I am currently a trainee in Dr. Larina's Lab 
+                at Baylor College of Medicine. 
+                My research is focus on the quantitative analysis of 
+                the sperm dynamics and reproduction related studies.
+              </p>
+            </div>
+            <div class="stats">
+              <div class="about-item">
+                  <p class="large-text">10+</p>
+                  <p class="small-text">Projects<br/> Completed</p>
+              </div>
+              <div class="about-item">
+                <p class="large-text">2</p>
+                <p class="small-text">Papers<br/> Published</p>
+              </div>
+              <div class="about-item">
+                <p class="large-text">5+</p>
+                <p class="small-text">Conferences<br/> Attended</p>
+              </div>
+              <div class="about-item">
+                <p class="large-text">560+</p>
+                <p class="small-text">Project<br/> Completed</p>
+              </div>
+            </div>
+          </div>
+          <div class="work"></div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section section3" id="projects">
+          <div class="title">
+            <h1>Projects</h1>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="section section4" id="contact">
+          <div class="title">
+            <h1>Contact <span>Me</span></h1>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Credit: mattboldt (Github) -->
+    <script src="app.js"></script>
+</body>
+</html>
