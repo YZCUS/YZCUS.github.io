@@ -201,19 +201,20 @@ body{
     flex-wrap: wrap;
     width:45%;
     height:45%;
-    padding: .3rem;
+    margin: .2rem;
+    padding: .2rem;
     justify-content: center;
     align-items: center;
     background-color: var(--color-bg-secondary);
     border: solid var(--color-text-supplement) .2rem;
 }
 .about-item:hover{
-    color:var(--color-text-secondary);
+    color:var(--color-text-accent);
     border: solid var(--color-text-accent) .2rem;
     box-shadow: .5px .5px 15px 2px var(--color-text-secondary);
 }
 .about-item .large-text{
-    font-size: 55px;;
+    font-size: 55px;
 }
 .about-item .small-text{
     font-size: 25px;
