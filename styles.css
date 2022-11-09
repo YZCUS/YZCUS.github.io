@@ -66,6 +66,7 @@ body{
     background-color: var(--color-bg-secondary);
     /* border:solid var(--color-text-accent) .15rem; */
     border-radius: .5rem;
+    cursor: pointer;
 }
 .control.active-btn{
     justify-content: center;
@@ -73,6 +74,7 @@ body{
     background-color: var(--color-bg-supplement);
 }
 .control:hover{
+    
     background-color: var(--color-bg-supplement);
 }
 
@@ -107,7 +109,7 @@ body{
     align-items: center;
     color: var(--color-text-secondary);
     background-color: var(--color-bg-secondary);
-    box-shadow: 1px 1px 15px 3px  var(--color-text-secondary);
+    box-shadow: 1px 1px 15px 3px var(--color-text-secondary);
     border-radius:1.3rem;
 }
 /* Photo */
