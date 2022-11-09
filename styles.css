@@ -47,10 +47,12 @@ body{
     display: flex;
     flex: auto;
     width:80%;
+    padding: .5rem;
     justify-content:center;
     align-items:center;
-    gap:auto;
-    list-style-type:none;
+    background-color: var(--color-bg-secondary);
+    /* border: solid white; */
+    border-radius: .5rem;
 }
 .control{
     display: flex;
@@ -62,8 +64,8 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--color-bg-secondary);
-    border:solid var(--color-text-accent) .15rem;
-    border-radius: .5rem;   
+    /* border:solid var(--color-text-accent) .15rem; */
+    border-radius: .5rem;
 }
 .control.active-btn{
     justify-content: center;
