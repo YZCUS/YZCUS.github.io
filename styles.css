@@ -457,9 +457,13 @@ body{
 }
 .project-details{
     margin: 2.5rem 1% 2rem auto;
+    /* border: solid red; */
 }
 .project-details h5{
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
+    /* border: solid; */
 }
 
 
