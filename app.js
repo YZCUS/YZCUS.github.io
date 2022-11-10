@@ -3,6 +3,7 @@ const sectBtns = document.querySelectorAll(".controls");
 const sectBtn = document.querySelectorAll(".control");
 const allSections = document.querySelector(".all-content");
 
+
 // Typing Animation
 var intro = new Typed(".auto-typing", {
   strings: ["a sciencist", "an opticist", "a biologist", "a programmer"],
@@ -51,3 +52,4 @@ function PageTransitions() {
 }
 
 PageTransitions();
+
