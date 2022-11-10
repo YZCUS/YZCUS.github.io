@@ -12,6 +12,10 @@ var intro = new Typed(".auto-typing", {
   loop: true,
 });
 
+function isHere(){
+  window.alert("Not Surprise! It is where you are now!");
+}
+
 //Pages Transition
 function PageTransitions() {
   //Button click active class
