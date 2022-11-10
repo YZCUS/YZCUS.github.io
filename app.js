@@ -14,7 +14,17 @@ var intro = new Typed(".auto-typing", {
 
 function isHere(){
   window.alert("Not Surprise! It is where you are now!");
-}
+};
+
+function openWindow(id){
+  const objwin = document.getElementById(id);
+  objwin.style.display='flex';
+};
+
+function closeWindow(id){
+  const objwin = document.getElementById(id);
+  objwin.style.display='none';
+};
 
 //Pages Transition
 function PageTransitions() {
