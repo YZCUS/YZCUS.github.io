@@ -26,7 +26,7 @@ function popWindow(id){
   }
 };
 
-// submitForm to google sheet
+// submitForm to google sheet    Credits: @jamiewilson (Github)
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxmrYeYtujnKpkESWbv_lQxYprwMRvgAsVMBIYQYCm3IkWc_KljLbwNBCuEEPguHtnGlA/exec';
 const form = document.forms['submit-to-google-sheet'];
 const sucmsg=document.getElementById('sucmsg');
