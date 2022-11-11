@@ -35,10 +35,11 @@ form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
-      sucmsg.innerHTML='You have successfully submited the form.<br>Thank you for your feedback!'
+      sucmsg.innerHTML='You have successfully submited the form.<br>Thank you for your feedback!';
       setTimeout(
         ()=> {sucmsg.innerHTML=""},5000
-      )
+      );
+      form.reset();
   })
     .catch(error => console.error('Error!', error.message))
 })
