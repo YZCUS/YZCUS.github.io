@@ -170,7 +170,7 @@
                   <a href="https://www.youtube.com/" target="_blank">
                     <i class="fab fa-youtube"></i>
                   </a>
-                  <i class="fas fa-expand" onclick="openWindow('uCT')"></i>
+                  <i class="fas fa-expand" onclick="popWindow('uCT')"></i>
                   <a href="https://doi.org/10.1093/pnasnexus/pgac155" target="_blank">
                     <i class="far fa-file-alt"></i>
                   </a>
@@ -192,7 +192,7 @@
                   <a href="https://www.youtube.com/" target="_blank">
                     <i class="fab fa-youtube"></i>
                   </a>
-                  <i class="fas fa-expand" onclick="openWindow('sperm')"></i>
+                  <i class="fas fa-expand" onclick="popWindow('sperm')"></i>
                 </div>
               </div>
             </div>
@@ -214,14 +214,14 @@
             </div>
           </div>
           <div class="pop-window" id="uCT">
-            <i class="fa fa-close" onclick="closeWindow('uCT')"></i>
+            <i class="fa fa-close" onclick="popWindow('uCT')"></i>
             <div class="project-details">
               <h5>Observe the phenotype of reproductive tract in progesterone receptor deficient mice</h5>
               <p>bbbbb</p>
             </div>
           </div>
           <div class="pop-window" id="sperm">
-            <i class="fa fa-close" onclick="closeWindow('sperm')"></i>
+            <i class="fa fa-close" onclick="popWindow('sperm')"></i>
             <div class="project-details">
               <h5>Quantitative analysis of spermatozoa hyperactivation state</h5>
               <p>ddddd</p>
@@ -234,6 +234,25 @@
           <div class="title">
             <h1>Contact <span>Me</span></h1>
           </div>
+          <form name="submit-to-google-sheet" class="contact-container">
+            <div class="contact-item">
+              <div class="name-container">
+                <input type="text" name="firstname" id="firstName" value="" placeholder="First Name">
+                <input type="text" name="lastname" id="lastName" value="" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="contact-item">
+              <input type="email" name="email" id="email" value="" placeholder="E-mail">
+            </div>
+            <div class="contact-item msg-area">
+              <textarea id="msg" name="message" value="" required placeholder="Message (Required)"></textarea>
+            </div>
+            <div class="contact-item form-btn">
+              <span id="sucmsg"></span>
+              <input type="reset" value="Clear" id="resetForm">
+              <input type="submit" value="Submit" id="submitForm">
+            </div>
+          </form>
         </div>
 
       </section>

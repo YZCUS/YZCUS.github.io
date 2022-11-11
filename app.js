@@ -13,18 +13,35 @@ var intro = new Typed(".auto-typing", {
 });
 
 function isHere(){
-  window.alert("Not Surprise! It is where you are now!");
+  window.alert("Surprise! It is where you are now!");
 };
 
-function openWindow(id){
+function popWindow(id){
   const objwin = document.getElementById(id);
-  objwin.style.display='flex';
+  if(window.getComputedStyle(objwin).display == "none"){
+    objwin.style.display="flex";
+  }
+  else if(window.getComputedStyle(objwin).display == 'flex'){
+    objwin.style.display='none';
+  }
 };
 
-function closeWindow(id){
-  const objwin = document.getElementById(id);
-  objwin.style.display='none';
-};
+// submitForm to google sheet
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxmrYeYtujnKpkESWbv_lQxYprwMRvgAsVMBIYQYCm3IkWc_KljLbwNBCuEEPguHtnGlA/exec';
+const form = document.forms['submit-to-google-sheet'];
+const sucmsg=document.getElementById('sucmsg');
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      sucmsg.innerHTML='You have successfully submited the form.<br>Thank you for your feedback!'
+      setTimeout(
+        ()=> {sucmsg.innerHTML=""},5000
+      )
+  })
+    .catch(error => console.error('Error!', error.message))
+})
 
 //Pages Transition
 function PageTransitions() {
