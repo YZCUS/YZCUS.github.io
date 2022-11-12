@@ -25,6 +25,7 @@
 }
 
 body{
+    min-width: 1350px;
     background-color: var(--color-bg-primary);
     font-family: 'Encode Sans Expanded', sans-serif;
     font-size: 1.1rem;
