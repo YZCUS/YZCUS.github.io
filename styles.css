@@ -97,6 +97,7 @@ body{
     border: solid var(--color-bg-secondary) 3px;
     border-radius: 50%;
     transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 .theme-btn:active{
     transform: translateY(-3px);
