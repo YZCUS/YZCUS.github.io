@@ -500,7 +500,7 @@ body{
     width: 100%;
     height: 100%;
 }
-input,textarea{
+input,textarea,button{
     display: flex;
     box-sizing: border-box;
     width: 100%;
