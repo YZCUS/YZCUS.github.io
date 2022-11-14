@@ -112,10 +112,11 @@ body{
     display: flex;
     position: fixed;
     top:0;
-    left: 0;
+    left: 30%;
     width: 100%;
     height: 15.5rem;
-    background-image: linear-gradient(0deg, var(--color-fadein-background) 0%, var(--color-fadeout-background) 40%);
+    background-image: linear-gradient(0deg, var(--color-fadein-background) 0%, var(--color-fadeout-background) 30%);
+    /* border: solid var(--color-text-primary) 2px; */
 }
 
 /* Main content area --contact information and content display */
@@ -123,10 +124,9 @@ body{
     display:flex;
     position:relative;
     width:auto;
-    height: 100vh;
+    height: fit-content;
     margin:12.5rem 12% 3% 3%;
     justify-content:space-between;
-    /* border:solid red 1px; */
 }
 /* Name card */
 .contact-info{
@@ -223,7 +223,7 @@ body{
 .section{
     display: none;
     position: relative;
-    height:100%;
+    height:fit-content;
     margin:0;
     padding:0.5rem;
     font-size: 35px;
@@ -492,7 +492,7 @@ body{
     flex-direction: column;
     box-sizing: border-box;
     width: 70%;
-    height: 50%;
+    height: 450px;
     margin: 3rem auto 0;
     padding:4% 2%;
     gap: 5%;
@@ -515,7 +515,7 @@ body{
     width: 100%;
     height: 100%;
 }
-input,textarea,button{
+input,textarea{
     display: flex;
     box-sizing: border-box;
     width: 100%;
