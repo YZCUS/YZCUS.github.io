@@ -527,6 +527,11 @@ input,textarea{
     border:solid var(--color-text-secondary);
     border-radius: .5rem;
 }
+input::placeholder,textarea::placeholder{
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
 .msg-area{
     display: flex;
     height: 100%;
