@@ -44,6 +44,8 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error!', error.message))
 })
 
+
+
 //Pages Transition
 function PageTransitions() {
   //Button click active class
