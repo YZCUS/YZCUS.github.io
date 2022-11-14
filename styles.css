@@ -370,7 +370,9 @@ body{
 .progress-bar .python{
     width: 75%;
 }
-
+.progress-bar .cpp{
+    width: 30%;
+}
 /* Projects */
 .project-containers{
     display: grid;
