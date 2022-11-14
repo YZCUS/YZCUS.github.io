@@ -9,6 +9,8 @@
     --color-bg-primary: #000;
     --color-bg-secondary: #1A374D;
     --color-bg-supplement: #B25068;
+    --color-fadein-background:rgba(0,0,0,0);
+    --color-fadeout-background:rgba(0,0,0,1);
     --color-text-primary: #fff;
     --color-text-secondary: #dddddd;
     --color-text-supplement: #B1D0E0;
@@ -18,6 +20,8 @@
     --color-bg-primary: #fff;
     --color-bg-secondary: #edf2f7;
     --color-bg-supplement: #a09999c5;
+    --color-fadein-background:rgba(255,255,255,0);
+    --color-fadeout-background:rgba(255,255,255,1);
     --color-text-primary: #2d3748;
     --color-text-secondary: #4a5568;
     --color-text-supplement: #7285a6;
@@ -102,6 +106,17 @@ body{
 .theme-btn:active{
     transform: translateY(-3px);
 }
+/* Fade mask */
+.fade-mask{
+    z-index: 150;
+    display: flex;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 15.5rem;
+    background-image: linear-gradient(0deg, var(--color-fadein-background) 0%, var(--color-fadeout-background) 40%);
+}
 
 /* Main content area --contact information and content display */
 .main-content{
@@ -111,7 +126,7 @@ body{
     height: 100vh;
     margin:12.5rem 12% 3% 3%;
     justify-content:space-between;
-    /* border:solid red; */
+    /* border:solid red 1px; */
 }
 /* Name card */
 .contact-info{
