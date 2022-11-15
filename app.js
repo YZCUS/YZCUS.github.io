@@ -6,7 +6,7 @@ const allSections = document.querySelector(".all-content");
 
 // Typing Animation
 var intro = new Typed(".auto-typing", {
-  strings: ["a sciencist", "an opticist", "a biologist", "a programmer"],
+  strings: ["a scientist", "an optical engineer", "a biologist", "a programmer"],
   typeSpeed: 80,
   backSpeed: 80,
   loop: true,
