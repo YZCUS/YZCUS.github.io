@@ -12,10 +12,12 @@ var intro = new Typed(".auto-typing", {
   loop: true,
 });
 
+// Pop the alert window
 function isHere(){
   window.alert("Surprise! It is where you are now!");
 };
 
+// Open and close the popWindow
 function popWindow(id){
   const objwin = document.getElementById(id);
   if(window.getComputedStyle(objwin).display == "none"){
