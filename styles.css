@@ -373,6 +373,9 @@ body{
 .progress-bar .cpp{
     width: 30%;
 }
+.progress-bar .git{
+    width: 30%;
+}
 /* Projects */
 .project-containers{
     display: grid;
