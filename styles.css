@@ -258,9 +258,9 @@ body{
 .intro-words p{
     display: flex;
     padding:.8rem;
-    text-align: left;
-    line-height: 2.5rem;
-    font-size: 30px;
+    text-align: justify;
+    line-height: 1.7rem;
+    font-size: 23px;
 }
 /* Stats */
 .stats{
