@@ -466,13 +466,13 @@ body{
     background-color: var(--color-bg-primary);
     box-shadow: 5px 5px 10px 5px var(--color-text-secondary);
 }
-.pop-window i{
+.pop-window .fa-close{
     position: absolute;
     top: 1rem;
     right: 2.5%;
     cursor: pointer;
 }
-.pop-window i:hover{
+.pop-window .fa-close:hover{
     color: var(--color-text-secondary);
     transform: rotateZ(45deg);
     transition: .8s ease-in-out;
@@ -490,6 +490,7 @@ body{
     font-size: 15px;
     font-weight: 100;
     line-height: 20px;
+    text-align: justify;
 }
 .project-content{
     display: grid;
@@ -500,6 +501,23 @@ body{
 }
 .project-content img{
     width: 100%;
+    background-color: white;
+}
+.img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-container a{
+    margin: .5rem;
+    font-size: 80px;
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+.img-container i{
+    position: relative;
+    cursor: pointer;
 }
 /* Contact */
 .contact-container{
